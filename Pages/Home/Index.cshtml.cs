@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FluentKnowledge_WEB.Pages;
+namespace FluentKnowledge_WEB.Pages.Home;
 
 public class IndexModel : PageModel
 {
