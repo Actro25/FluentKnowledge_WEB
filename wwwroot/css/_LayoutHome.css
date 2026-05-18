@@ -1,0 +1,83 @@
+﻿body {
+  background-color: #403D39;
+  width: 100%; 
+  min-height: 100vh; 
+  max-height: 100vh;
+  height: 100vh;
+  padding: 1vw 1vw; 
+  box-sizing: border-box; 
+  margin: 0; 
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 4%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 35%; 
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo-choice{
+  width:15%;
+  height: 100%;
+  background-color: #84A59D;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.4s ease-in-out; 
+}
+
+.second-choice, .third-choice, .fourth-choice {
+  width: 23.33%; 
+  height: 100%;
+  transition: width 0.4s ease-in-out; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar .active-choice {
+  width: 30%; 
+}
+
+.nav-bar:hover .active-choice {
+  width: 23.33%;
+}
+
+.nav-bar .second-choice:hover,
+.nav-bar .third-choice:hover,
+.nav-bar .fourth-choice:hover {
+  width: 30%;
+}
+.nav-bar .logo-choice:hover{
+  width: 40%;
+}
+
+.second-choice {
+  background-color: #457B9D;
+  clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
+
+.third-choice {
+  background-color: #D4A373;
+  clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
+
+.fourth-choice {
+  background-color: #B5838D;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+}

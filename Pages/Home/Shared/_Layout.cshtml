@@ -4,15 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - FluentKnowledge_WEB</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/FluentKnowledge_WEB.styles.css" asp-append-version="true" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/_LayoutHome.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="sidebar">Nav Bar</div>
+    <header>
+        <div class="nav-bar">
+            <div class="logo-choice">FluentKnowledge</div>
+            <div class="active-choice second-choice">Learning</div>
+            <div class="third-choice">Editing</div>
+            <div class="fourth-choice">Library</div>
+        </div>
+    </header>
     <br>
-    <div class="content">
+    <div>
         @RenderBody()
     </div>
 </body>
