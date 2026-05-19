@@ -14,6 +14,7 @@
 header{
   width: 100%;
   height: 4%;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -21,7 +22,7 @@ header{
 .nav-bar {
   display: flex;
   align-items: center;
-  width: 35%; 
+  width: 25%; 
   height: 100%;
   overflow: hidden;
 }
@@ -40,7 +41,7 @@ header{
 }
 
 .second-choice, .third-choice, .fourth-choice {
-  width: 23.33%; 
+  width: 30%; 
   height: 100%;
   transition: width 0.4s ease-in-out; 
   display: flex;
@@ -49,20 +50,20 @@ header{
 }
 
 .nav-bar .active-choice {
-  width: 30%; 
+  width: 40%; 
 }
 
 .nav-bar:hover .active-choice {
-  width: 23.33%;
+  width: 25%;
 }
 
 .nav-bar .second-choice:hover,
 .nav-bar .third-choice:hover,
 .nav-bar .fourth-choice:hover {
-  width: 30%;
+  width: 40%;
 }
 .nav-bar .logo-choice:hover{
-  width: 40%;
+  width: 50%;
 }
 
 .second-choice {
@@ -80,4 +81,34 @@ header{
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.custom-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5EBE0;
+  margin-left: 12%;
+  padding: 0 0 0 15px;
+  width: 25%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.custom-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0 0 0 20px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #F5EBE0;
+  outline: none; 
+  padding: 0px;
+  border: none;
+}
+
+.custom-input::placeholder {
+  color: #000000;
 }
