@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace FluentKnowledge_WEB.Pages.Home;
+namespace FluentKnowledge_WEB.Pages.Home.Learning;
 
-public class IndexModel : PageModel
+public class LearningModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    private readonly ILogger<LearningModel> _logger;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public LearningModel(ILogger<LearningModel> logger)
     {
         _logger = logger;
     }

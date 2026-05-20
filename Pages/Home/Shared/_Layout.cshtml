@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="~/css/_LayoutHome.css" asp-append-version="true" />
     @await RenderSectionAsync("Styles", required: false)
 </head>
+@{
+    var currentPage = ViewContext.RouteData.Values["page"]?.ToString();
+}
 <body>
     <header>
         <div class="nav-bar-and-search-wrapper">
             <div class="nav-bar">
                 <a class="choice-link logo-choice" asp-area="" asp-page="/Welcome/Index">FluentKnowledge</a>
-                <a class="choice-link active-choice second-choice" asp-area="" asp-page="/Welcome/Index">Learning</a>
-                <a class="choice-link third-choice" asp-area="" asp-page="/Welcome/Index">Editing</a>
-                <a class="choice-link fourth-choice" asp-area="" asp-page="/Welcome/Index">Library</a>
+                <a class="choice-link second-choice @(currentPage == "/Home/Learning" ? "active-choice" : "")" asp-area="" asp-page="/Home/Learning">Learning</a>
+                <a class="choice-link third-choice @(currentPage == "/Home/Editing" ? "active-choice" : "")" asp-area="" asp-page="/Home/Editing">Editing</a>
+                <a class="choice-link fourth-choice @(currentPage == "/Home/Library" ? "active-choice" : "")" asp-area="" asp-page="/Home/Library">Library</a>
             </div>
             <div class="custom-input-wrapper">
                 <input type="text" id="search-by-side" class="custom-input" placeholder="Search" />
