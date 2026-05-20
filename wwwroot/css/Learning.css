@@ -1,0 +1,21 @@
+.learning-divs-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 100%;
+    width: 100%;
+}
+
+.left-div, .main-div{
+    height: 100%;
+    background-color: #F5EBE0;
+    border-radius: 20px;
+}
+
+.left-div{
+    width: 25%;
+}
+
+.main-div{
+    flex-grow: 1;
+}

@@ -9,6 +9,9 @@
   margin: 0; 
   color: #000000;
   font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
 header{
@@ -17,6 +20,7 @@ header{
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-bar {
@@ -24,7 +28,7 @@ header{
   align-items: center;
   width: 40%; 
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .logo-choice{
@@ -47,6 +51,14 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .nav-bar .active-choice {
@@ -87,7 +99,6 @@ header{
   display: flex;
   flex-direction: column;
   background-color: #F5EBE0;
-  margin-left: 20%;
   padding: 0 0 0 20px;
   width: 40%;
   height: 100%;
@@ -115,7 +126,6 @@ header{
 .right-buttons-wrapper{
   display: flex;
   flex-direction: row;
-  margin-left:25%;
   width: 10%;
   height: 100%;
   box-sizing: border-box;
@@ -144,10 +154,28 @@ header{
   overflow: hidden;
   width: 65%;
   height: 100%;
+  justify-content: space-between;
 }
 
 .username-holder{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content-wrapper{
+  width: 100%;
+  flex-grow: 1;
+}
+
+.choice-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }

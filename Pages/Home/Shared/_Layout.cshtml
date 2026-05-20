@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="~/css/_LayoutHome.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
     <header>
         <div class="nav-bar-and-search-wrapper">
             <div class="nav-bar">
-                <div class="logo-choice">FluentKnowledge</div>
-                <div class="active-choice second-choice">Learning</div>
-                <div class="third-choice">Editing</div>
-                <div class="fourth-choice">Library</div>
+                <a class="choice-link logo-choice" asp-area="" asp-page="/Welcome/Index">FluentKnowledge</a>
+                <a class="choice-link active-choice second-choice" asp-area="" asp-page="/Welcome/Index">Learning</a>
+                <a class="choice-link third-choice" asp-area="" asp-page="/Welcome/Index">Editing</a>
+                <a class="choice-link fourth-choice" asp-area="" asp-page="/Welcome/Index">Library</a>
             </div>
             <div class="custom-input-wrapper">
                 <input type="text" id="search-by-side" class="custom-input" placeholder="Search" />
@@ -33,8 +34,7 @@
             </div>
         </div>
     </header>
-    <br>
-    <div>
+    <div class="content-wrapper">
         @RenderBody()
     </div>
 </body>
