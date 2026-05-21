@@ -1,0 +1,52 @@
+@page
+@model FluentKnowledge_WEB.Pages.Registration.Signup.SignupModel;
+@{
+    Layout = null; 
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="~/css/Signup.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="login-div">
+        <h1 class="head-word">Sign Up</h1>
+        <div class="line-div"></div>
+
+        <div class="content-wrapper">
+            <div class="inner-wrapper">
+                <label class="text-under-input" for="userNameId">User name</label>
+                <div class="input-wrapper">
+                    <input type="text" id="userNameId" placeholder="Enter username"/>
+                </div>
+            </div>
+
+            <div class="inner-wrapper">
+                <label class="text-under-input" for="emailId">Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="emailId" placeholder="Enter email"/>
+                </div>
+            </div>
+
+            <div class="inner-wrapper">
+                <label class="text-under-input" for="passwordId">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="passwordId" placeholder="Enter password"/>
+                </div>
+            </div>
+
+            <div class="inner-wrapper">
+                <label class="text-under-input" for="confirmPasswordId">Confirm password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="confirmPasswordId" placeholder="Repeat password"/>
+                </div>
+            </div>
+        </div>
+        <span class="important-text">More Info | <a href="/Registration/Login">Log In</a></span>
+        <button>Sing Up</button>
+    </div>
+</body>
+</html>

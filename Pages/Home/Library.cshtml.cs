@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FluentKnowledge_WEB.Pages.Home.Library;
 
-partial class LibraryModel : PageModel
+public class LibraryModel : PageModel
 {
     private readonly ILogger<LibraryModel> _logger;
 
